@@ -1,0 +1,7 @@
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        temp = tempi = head
+        while tempi and tempi.next:
+            temp = temp.next
+            tempi = tempi.next.next
+        return temp
