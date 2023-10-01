@@ -1,0 +1,10 @@
+def find_kth_from_end(self,k):
+    slow=fast=self.head
+    for _ in range(k):
+        if fast is None:
+            return None
+        fast=fast.next
+    while fast:
+        slow=slow.next
+        fast=fast.next
+    return slow
