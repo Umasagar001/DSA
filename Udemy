@@ -8,3 +8,4 @@ def find_kth_from_end(self,k):
         slow=slow.next
         fast=fast.next
     return slow
+
